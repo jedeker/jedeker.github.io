@@ -1,0 +1,50 @@
+html, body { margin: 0; padding: 0; }
+
+body {
+	font-family: fira-sans, sans-serif;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 300;
+	
+	.pages {
+		margin: 0.5em;
+		
+		li {
+			display: inline-block;
+			padding: 1em;
+			
+			&:hover {
+				text-decoration: underline;
+				text-decoration-skip: none;
+			}
+		}
+	}
+	
+	a {
+		color: black;
+		text-decoration: none;
+	}
+	
+	.about-me {
+		margin: auto 1em auto 0;
+		padding: 1em;
+		
+		&:hover {
+			text-decoration: underline;
+			text-decoration-skip: none;
+		}
+	}
+}
+
+.content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	width: 60%;
+}
+

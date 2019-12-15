@@ -1,0 +1,39 @@
+.revision-intro {
+  padding: 2em 30% 2em 20%;
+  background-color: #212529;
+  color: #8C8C8C;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); }
+
+#yellow-text {
+  position: absolute;
+  top: 8%;
+  right: 5%;
+  height: 600px;
+  background-color: #333333;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); }
+  #yellow-text h4 {
+    margin: 1em;
+    font-size: 1.2em;
+    letter-spacing: 0.3em;
+    color: #BFA93B; }
+  #yellow-text ul {
+    color: #8C8C8C; }
+    #yellow-text ul li {
+      margin: 0.5em; }
+
+.assignment {
+  margin: 2em 20% 2em 20%; }
+
+.text-decoration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: american-scribe, sans-serif;
+  font-weight: 400;
+  font-size: 10em;
+  color: #000000;
+  opacity: 0.1;
+  transform: translate(-50%, -50%); }
+
+#group1 {
+  height: 135vh; }

@@ -1,0 +1,38 @@
+#photo {
+	position: absolute;
+	left: 4em;
+	transform: translateY(2em);
+  	object-fit: cover;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+}
+
+.about-me-intro {
+	padding: 4em 32% 4em calc(400px + 8em);
+	height: calc(600px - 8em);
+	background-color: #212529;
+	color: #8C8C8C;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+
+}
+
+h3 {
+	margin: 0;
+}
+
+#clock-graph {
+	width: 500px;
+	height: 500px;
+}
+
+.clock {
+	position: absolute;
+	top: 30%;
+	right: 4em;
+	background-color: #333333;
+	color: #8C8C8C;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+	
+	p {
+		margin: 2em 1em 2em 1em;
+	}
+}
