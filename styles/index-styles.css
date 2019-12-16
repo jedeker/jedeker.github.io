@@ -55,12 +55,12 @@ h2 {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); }
 
 #group1 {
-  z-index: 2; }
+  z-index: 1; }
   #group1 .parallax__layer--fore {
     pointer-events: none; }
 
 #group2 {
-  z-index: 1; }
+  z-index: 2; }
 
 .section-heading {
   position: absolute;
@@ -76,3 +76,15 @@ h2 {
   width: 50%;
   top: 7em;
   transform: translateX(-50%); }
+
+#sample-email {
+  width: calc(100% - 4em);
+  padding: 2em;
+  background: #212529;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); }
+
+#calculator {
+  position: absolute;
+  top: 35%;
+  right: 2em;
+  pointer-events: auto; }

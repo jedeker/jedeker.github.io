@@ -21,7 +21,7 @@
 
 #letter-e {
 	position: absolute;
-	top: 40%;
+	top: 30%;
 	right: 10%;
 }
 
@@ -36,7 +36,7 @@
 }
 
 #group1 {
-	z-index: 2;
+	z-index: 1;
 }
 
 .o-content {
@@ -77,7 +77,7 @@
 
 .v-content {
 	position: absolute;
-	top: 20%;
+	top: 40%;
 	background-color: #212529;
 	color: #8C8C8C;
 	box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
@@ -90,4 +90,33 @@
 	.v-content-lower {
 		padding: 1em 4em 1em 4em;
 	}
+}
+
+#e-image {
+	width: 400px;
+	height: 600px;
+}
+
+#e-code {
+	position: absolute;
+	top: 60%;
+	right: 5%;
+	background-color: #333333;
+	color: #8C8C8C;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+	
+	p {
+		padding: 1em;
+	}
+}
+
+.e-content {
+	position: absolute;
+	top: 60%;
+	left: 0;
+	width: 60%;
+	padding: 4em 4em 4em 12%;
+	background-color: #212529;
+	color: #8C8C8C;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
 }
