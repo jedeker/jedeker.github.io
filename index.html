@@ -17,7 +17,6 @@
 <div class="intro">
     <div class="title-wrapper">
         <h1 class="title">A Guide to Creating Art in Desmos</h1><br>
-        <h2 class="subtitle">By Joe Edeker</h2>
     </div>
 </div>
 <div class="main">
@@ -142,7 +141,7 @@
         <aside class="split-aside"></aside>
     </div>
     <p>You can view an example of the equations here:</p>
-    <div id="calculator" style="width: 100%; height: 800px;"></div>
+    <div id="equations-calculator" style="width: 100%; height: 800px;"></div>
     <div class="major-step split">
         <div class="split-main">
             <h3 id="step-4">4. Outlining Shapes</h3>
@@ -174,8 +173,22 @@
                 <li>Copy-paste the following latex into Desmos: <code>\left(\left\{t<1:\right\},\left\{t<1:\right\}\right)</code></li>
                 <li>Designate a starting line or curve.</li>
                 <li>Copy the x-component of line or curve into the equation from Step 2 after the first colon.</li>
-                <li>Copy the y-component of line or curve into the equation from Step 2 after the second colon.</li>
+                <li>Copy the y-component of line or curve into the equation from Step 2 after the second colon. (At this point, your line or arc should appear.)</li>
                 <li>Count the number of lines and curves in the shape.</li>
+                <li>Set the <span class="tooltip">maximum<span class="content"><img src="res/domain.png"/></span></span> of the domain of <i>t</i> to the number of lines and curves.</li>
+                <li>Type <code>,t<2:</code>after the copied equation from Step 4.</li>
+                <li>Copy the x-component of the next line or curve after the colon from the previous step.</li>
+                <li>Identify all occurence of <i>t</i> introduced by the previous step.</li>
+                <li>Replace the occurences with <code>\left(t-1\right)</code>.</li>
+                <li>Type <code>,t<2:</code>after the copied equation from Step 5.</li>
+                <li>Copy the y-component of the next line or curve after the colon from the previous step.</li>
+                <li>Identify all occurence of <i>t</i> introduced by the previous step.</li>
+                <li>Replace the occurences with <code>\left(t-1\right)</code>.</li>
+                <li>If you shape contains more equations, repeat steps 8-15 with the following modifications.</li>
+                <ol>
+                    <li>Increment the 2 in Steps 8 and 12 by one each time.</li>
+                    <li>Increment the 1 in Steps 11 and 15 by one each time.</li>
+                </ol>
             </ol>
         </div>
         <aside class="split-aside">
@@ -183,9 +196,11 @@
             </div>
         </aside>
     </div>
+    <p>You can view a completed piecewise function here:</p>
+    <div id="piecewise-calculator" style="width: 100%; height: 800px;"></div>
     <div class="conclusion">
         <h3>Afterward</h3>
-        <p>Now you should have the tools to recreate any drawing in Desmos. </p>
+        <p>Now you should have the tools to recreate any drawing in Desmos. There are many other techniques to creating art in Desmos, consider checking out some of the graphs featured on the Desmos homepage.</p>
     </div>
 </div>
 <div class="footer">
@@ -195,9 +210,13 @@
 </div>
 <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
 <script>
-    var elt = document.getElementById('calculator');
-    var calculator = Desmos.GraphingCalculator(elt);
-    calculator.setState(JSON.parse('{"version":9,"randomSeed":"8ad63c5db26bbe2ad6dd78b7e4a7fa46","graph":{"viewport":{"xmin":-10,"ymin":-8.211538461538463,"xmax":10,"ymax":8.21153846153846}},"expressions":{"list":[{"type":"folder","id":"2","title":"Points","collapsed":true},{"type":"expression","id":"5","folderId":"2","color":"#2d70b3","latex":"\\\\left(x_{0},y_{0}\\\\right)"},{"type":"expression","id":"6","folderId":"2","color":"#388c46","latex":"x_{0}=-2","hidden":true},{"type":"expression","id":"7","folderId":"2","color":"#6042a6","latex":"y_{0}=4","hidden":true},{"type":"expression","id":"8","folderId":"2","color":"#000000","latex":"\\\\left(x_{1},y_{1}\\\\right)"},{"type":"expression","id":"9","folderId":"2","color":"#c74440","latex":"x_{1}=3","hidden":true},{"type":"expression","id":"10","folderId":"2","color":"#2d70b3","latex":"y_{1}=3","hidden":true},{"type":"expression","id":"11","folderId":"2","color":"#388c46","latex":"\\\\left(x_{2},y_{2}\\\\right)"},{"type":"expression","id":"12","folderId":"2","color":"#6042a6","latex":"x_{2}=4","hidden":true},{"type":"expression","id":"13","folderId":"2","color":"#000000","latex":"y_{2}=0","hidden":true},{"type":"expression","id":"14","folderId":"2","color":"#c74440","latex":"\\\\left(x_{3},y_{3}\\\\right)"},{"type":"expression","id":"15","folderId":"2","color":"#2d70b3","latex":"x_{3}=-1","hidden":true},{"type":"expression","id":"16","folderId":"2","color":"#388c46","latex":"y_{3}=-3","hidden":true},{"type":"expression","id":"17","folderId":"2","color":"#6042a6","latex":"\\\\left(x_{4},y_{4}\\\\right)"},{"type":"expression","id":"18","folderId":"2","color":"#000000","latex":"x_{4}=-3","hidden":true},{"type":"expression","id":"19","folderId":"2","color":"#c74440","latex":"y_{4}=-1","hidden":true},{"type":"folder","id":"4","title":"Line"},{"type":"expression","id":"21","folderId":"4","color":"#388c46","latex":"\\\\left(\\\\left(x_{1}-x_{0}\\\\right)t+x_{0},\\\\left(y_{1}-y_{0}\\\\right)t+y_{0}\\\\right)","hidden":true},{"type":"folder","id":"3","title":"Polygon"},{"type":"expression","id":"22","folderId":"3","color":"#6042a6","latex":"\\\\operatorname{polygon}\\\\left(\\\\left[x_{0},x_{1},x_{2},x_{3},x_{4}\\\\right],\\\\left[y_{0},y_{1},y_{2},y_{3},y_{4}\\\\right]\\\\right)","hidden":true},{"type":"folder","id":"24","title":"Bezier Curve"},{"type":"expression","id":"25","folderId":"24","color":"#c74440","latex":"B\\\\left(t,P\\\\right)=\\\\sum_{i=0}^{\\\\operatorname{length}\\\\left(P\\\\right)-1}\\\\operatorname{nCr}\\\\left(\\\\operatorname{length}\\\\left(P\\\\right)-1,i\\\\right)\\\\left(1-t\\\\right)^{\\\\operatorname{length}\\\\left(P\\\\right)-1-i}t^{i}P\\\\left[i+1\\\\right]"},{"type":"expression","id":"31","folderId":"24","color":"#2d70b3","latex":"\\\\left(B\\\\left(t,\\\\left[x_{0},x_{1},x_{2},x_{3}\\\\right]\\\\right),B\\\\left(t,\\\\left[y_{0},y_{1},y_{2},y_{3}\\\\right]\\\\right)\\\\right)","hidden":true}]}}'));
-  </script>
+    var elt1 = document.getElementById('equations-calculator');
+    var calculator1 = Desmos.GraphingCalculator(elt1);
+    calculator1.setState(JSON.parse('{"version":9,"randomSeed":"8ad63c5db26bbe2ad6dd78b7e4a7fa46","graph":{"viewport":{"xmin":-10,"ymin":-8.211538461538463,"xmax":10,"ymax":8.21153846153846}},"expressions":{"list":[{"type":"folder","id":"2","title":"Points","collapsed":true},{"type":"expression","id":"5","folderId":"2","color":"#2d70b3","latex":"\\\\left(x_{0},y_{0}\\\\right)"},{"type":"expression","id":"6","folderId":"2","color":"#388c46","latex":"x_{0}=-2","hidden":true},{"type":"expression","id":"7","folderId":"2","color":"#6042a6","latex":"y_{0}=4","hidden":true},{"type":"expression","id":"8","folderId":"2","color":"#000000","latex":"\\\\left(x_{1},y_{1}\\\\right)"},{"type":"expression","id":"9","folderId":"2","color":"#c74440","latex":"x_{1}=3","hidden":true},{"type":"expression","id":"10","folderId":"2","color":"#2d70b3","latex":"y_{1}=3","hidden":true},{"type":"expression","id":"11","folderId":"2","color":"#388c46","latex":"\\\\left(x_{2},y_{2}\\\\right)"},{"type":"expression","id":"12","folderId":"2","color":"#6042a6","latex":"x_{2}=4","hidden":true},{"type":"expression","id":"13","folderId":"2","color":"#000000","latex":"y_{2}=0","hidden":true},{"type":"expression","id":"14","folderId":"2","color":"#c74440","latex":"\\\\left(x_{3},y_{3}\\\\right)"},{"type":"expression","id":"15","folderId":"2","color":"#2d70b3","latex":"x_{3}=-1","hidden":true},{"type":"expression","id":"16","folderId":"2","color":"#388c46","latex":"y_{3}=-3","hidden":true},{"type":"expression","id":"17","folderId":"2","color":"#6042a6","latex":"\\\\left(x_{4},y_{4}\\\\right)"},{"type":"expression","id":"18","folderId":"2","color":"#000000","latex":"x_{4}=-3","hidden":true},{"type":"expression","id":"19","folderId":"2","color":"#c74440","latex":"y_{4}=-1","hidden":true},{"type":"folder","id":"4","title":"Line"},{"type":"expression","id":"21","folderId":"4","color":"#388c46","latex":"\\\\left(\\\\left(x_{1}-x_{0}\\\\right)t+x_{0},\\\\left(y_{1}-y_{0}\\\\right)t+y_{0}\\\\right)","hidden":true},{"type":"folder","id":"3","title":"Polygon"},{"type":"expression","id":"22","folderId":"3","color":"#6042a6","latex":"\\\\operatorname{polygon}\\\\left(\\\\left[x_{0},x_{1},x_{2},x_{3},x_{4}\\\\right],\\\\left[y_{0},y_{1},y_{2},y_{3},y_{4}\\\\right]\\\\right)","hidden":true},{"type":"folder","id":"24","title":"Bezier Curve"},{"type":"expression","id":"25","folderId":"24","color":"#c74440","latex":"B\\\\left(t,P\\\\right)=\\\\sum_{i=0}^{\\\\operatorname{length}\\\\left(P\\\\right)-1}\\\\operatorname{nCr}\\\\left(\\\\operatorname{length}\\\\left(P\\\\right)-1,i\\\\right)\\\\left(1-t\\\\right)^{\\\\operatorname{length}\\\\left(P\\\\right)-1-i}t^{i}P\\\\left[i+1\\\\right]"},{"type":"expression","id":"31","folderId":"24","color":"#2d70b3","latex":"\\\\left(B\\\\left(t,\\\\left[x_{0},x_{1},x_{2},x_{3}\\\\right]\\\\right),B\\\\left(t,\\\\left[y_{0},y_{1},y_{2},y_{3}\\\\right]\\\\right)\\\\right)","hidden":true}]}}'));
+    
+    var elt2 = document.getElementById('piecewise-calculator');
+    var calculator2 = Desmos.GraphingCalculator(elt2);
+    calculator2.setState();
+</script>
 <script type="text/javascript" src="src/scripts/main.js"></script>
 </body>
