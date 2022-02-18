@@ -1,62 +1,203 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
 <head>
-<meta charset="utf-8">
-<title>Portfolio</title>
+    <meta charset="utf8">
+    <title>Instructions</title>
 
-<link href="styles/theme.css" rel="stylesheet" type="text/css">
-<link href="styles/parallax.css" rel="stylesheet" type="text/css">
-<link href="styles/index-styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="src/styles/styles.css"/>
+    <link rel="stylesheet" href="src/styles/main.css"/>
 
-<link rel="stylesheet" href="https://use.typekit.net/hkh5qut.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gfj2asa.css">
+
+    <meta name="author" content="Joe Edeker">
+    <meta name="description" content="A guide to creating art in Desmos.">
 </head>
 
 <body>
-<div class="parallax">
-	<div id="group1" class="parallax__group">
-		<div class="parallax__layer--fore">
-			<div class="intro">
-				<p><strong>Welcome</strong>,<br>
-				this ISUcomm ePortfolio demonstrates my progress in communciation throughout the semester. Contained in the portfolio are examples of my improvement and strength in oral, visual, electronic, and written commication. The examples are linked in the navigation menu.</p>
-			</div>
-		</div>
-		<div class="parallax__layer--base">
-			<nav class="nav">
-				<ul class="pages">
-					<li><a href="">Introductory Reflection</a></li>
-					<li><a href="pages/assignment-revision.html">Assignment Revision</a></li>
-					<li><a href="pages/ove.html">OVE Reflection</a></li>
-					<li><a href="pages/journal-revision.html">Journal Revision</a></li>
-					<li><a href="pages/closing-reflection.html">Closing Reflection</a></li>
-				</ul>
-				<a class="about-me" href="pages/about-me.html">About Me</a>
-			</nav>
-			<div class="title">
-				<h1>Joe Edeker</h1>
-				<h2>Portfolio</h2>
-			</div>
-			<img id="blue-code" src="images/blue-code.png" alt="code" width="400px" height="400px"/>
-		</div>
-		<div class="parallax__layer--back">
-			<span class="reference">English 250H (TC)</span>
-			<span class="text-decoration">J E</span>
-		</div>
-	</div>
-	<div id="group2" class="parallax__group">
-		<div class="parallax__layer--base">
-			<h3 class="section-heading">Introductory Reflection</h3>
-			<div class="content">
-				<p>My initial expectations for this semester in English 250 ended up completely different from what transpired. Putting aside health issues, looking back on Assignment One, I had a much narrower perspective on communication. Within written, oral, visual and electronic communication there were specific aspects which I wanted to focus on improving (i.e. mechanics, vocabulary, aesthetics); although, my improvement this semester has been about changing my approach to writing and integrating different ideas across the different forms of communication. My writing process has changed considerably throughout the semester.<br>
-				<br>
-				Initially, my writing process was much less defined. For the first few assignments, it varied assignment to assignment: sometimes more organized, sometimes rewriting successive drafts. As I progressed, I found that organizing information and ideas on paper first was much more efficient. Especially since I often get stuck on phrasing and diction. From there I would construct an outline, then finally complete a draft. Solidifying my writing process has improved my skills as a writer as well as improving the quality of my first drafts. Throughout the semester, I have utilized technology to augment my writing both in and outside this class. Specifically, for this class I have used Adobe Photoshop and Illustrator for Assignments 4, 5, and 6. Additionally, this website is the most significant example of my use of technology, as it was coded entirely in Adobe Dreamweaver without any use of templates. There are other opportunities that aren’t always obvious candidates, such as email communication and PowerPoints. Applying technology has strengthened my communication as well as made it more interesting.</p>
-				<img id="sample-email" src="images/sample-email.png" alt=""/>
-				<p>
-				One component to this class which surprised me was how helpful it was to work with peers. During peer review sessions, what I found the most helpful was reading other students’ papers sometimes provided additional context or clarification and new perspectives or ideas, with the sessions also catching grammatical mistakes and formatting issues. Another example is working in groups for class discussion leaders and Assignment 5. These experiences have made me reconsider the solo approach to writing that I developed in high school.<br>
-				<br>
-				How I improved as a communicator over the semester is vastly different from my expectations entering this course. My improvement has been more robust that I expected with improvements in my writing process, familiarity with using technology, and a new perspective on working with my peers.</p>
-			</div>
-		</div>
-	</div>
+<div class="page-wrapper">
+<div class="intro">
+    <div class="title-wrapper">
+        <h1 class="title">A Guide to Creating Art in Desmos</h1><br>
+        <h2 class="subtitle">By Joe Edeker</h2>
+    </div>
 </div>
+<div class="main">
+    <div class="introduction split">
+        <div class="split-main">
+            <h3>Introduction</h3>
+            <p>The Desmos graphing calculator is often used to draw art (figure 1), in addition to visualizing
+                equations and data. Official contests have been held, with art featured on the
+                website. The following instructions describe one process of creating such art.
+            </p>
+            <p>The basic understanding of Desmos is required and a strong understanding of high school level math is recommended (Algebra II or above).
+            </p>
+            <p class="note"><span class="note-type">Hint:</span> Bolded keywords reveal additional information when moused over.</p>
+        </div>
+        <aside class="split-aside">
+            <img class="figure" src="res/no-title.png"/><br>
+            <caption>Figure 1: Desmos adapation of「No Title-」album cover art.</caption>
+        </aside>
+    </div>
+    <div class="contents">
+        <h3>Table of Contents</h3>
+        <ol>
+            <li><a href="#step-1">Choosing a Reference</a></li>
+            <li><a href="#step-2">Planning a Reference</a></li>
+            <li><a href="#step-3">Buidling Equations</a></li>
+            <li><a href="#step-4">Outlining Shapes</a></li>
+            <li><a href="#step-5">Filling and Coloring</a></li>
+        </ol>
+    </div>
+    <div class="major-step split">
+        <div class="split-main">
+            <h3 id="step-1">1. Choosing a Reference</h3>
+            <p>Choose and <span class="tooltip">upload<span class="content"><img src="res/upload.png"/></span></span> a reference image to Desmos.</p>
+            <p class="note"><span class="note-type">Important:</span> The difficulty and time
+                required greatly depend on the reference. Easier references focus on one subject
+                with clearly defined shapes (figure 2a). More difficult references contain fine
+                detail (figure 2b). Photo-realistic images are not recommended since shapes and
+                colors may not have well defined borders (figure 2c).
+            </p>
+        </div>
+        <aside class="split-aside"></aside>
+    </div>
+    <div class="gallary">
+        <div class="gallary-item">
+            <img class="figure" src="res/placeholder.png"/>
+            <p class="caption">Figure 2a: A simple image containing a few large shapes and strokes which add detail to the image. Estimated time of completion 1 hour.</p>
+        </div>
+        <div class="gallary-item">
+            <img class="figure" src="res/placeholder.png"/><br>
+            <p class="caption">Figure 2b: A character drawing which contains many shapes and details. Estimated time of completion 5+ hours.</p>
+        </div>
+        <div class="gallary-item">
+            <img class="figure" src="res/placeholder.png"/><br>
+            <p class="caption">Figure 2c: A real-life photo which contains high amounts of fine detail. Not recommended.</p>
+        </div>
+    </div>
+    <div class="major-step split">
+        <div class="split-main">
+            <h3 id="step-2">2. Planning a Reference</h3>
+            <p>Designate a <i>shape</i> or <i>stroke</i>.</p>
+            <p>Add a point along the path each time one of the following situations occur:</p>
+            <ol>
+                <li>Start or end of stroke</li>
+                <li>A <span class="tooltip">corner<span class="content"><p>A point at which the path is not smooth (the derivative is not continuous).</p></span></span></li>
+                <li>A change in <span class="tooltip">characteristic<span class="content"><p>Example: A line transitioning into an arc.</p></span></span></li>
+                <li>An intersection of three or more shapes</li>
+            </ol>
+            <p>To add a point, type <code>(x_</code> ? <code>→</code><code>,y_</code> ? <code>)</code> where ? is the current number of points already in the graph and → is the right arrow key.</p>
+            <p>Click the blue <span class="tooltip">all<span class="content"><img src="res/slider-all.png"/></span></span> button which appears.</p>
+            <p class="note"><span class="note-type">Tip:</span> Add all points to a folder to keep your graph organized.</p>
+        </div>
+        <aside class="split-aside">
+            <div class="note"><p><span class="note-type">Definitions:</span>
+                <ul>
+                    <li><span class="tooltip">Path,<span class="content"><p>Tip: You should be able to trace a path without backtracking.
+                        If it seems backtracking is required, then the object contains more than one path.</p></span></span>
+                        a series of curves or lines which are connected end to end.</li>
+                    <li><span class="tooltip">Shape,<span class="content"><p>Tip: Additional considerations need to be made if a path encloses more than one color.
+                        Breaking the shape into multiple pieces is one way to solve the issue. See Step 4 for more information.</p></span></span>
+                        a path which encloses a region of a singular color.</li>
+                    <li><span class="tooltip">Stroke,<span class="content"><p>Tip: Strokes are paths which do not fill in the image.</p></span></span> a path which does not enclose any region.</li>
+                </ul>
+            </p></div>
+        </aside>
+    </div>
+    <div class="major-step split">
+        <div class="split-main">
+            <h3 id="step-3">3. Building Equations</h3>
+            <p>All paths can be approximated by lines and Bezier curves. Other equations may be used, but each require additional adaptation which is outside the scope of this guide.
+                Polynomials, Splines, and Fourier Series are among the most powerful techniques to name a few.</p>
+            <p>Experiment with the following equations to see how they work. Add any new points as needed so the points added in Step 2 may remain stationary.</p>
+            <h4>Lines</h4>
+            <p>The parametric equation which connects two points is as follows:</p><img height="32px" src="res/point-equation.PNG"/>
+            <p>Copy-paste the following latex into Desmos: <code>\left(\left(c-a\right)t+a,\left(d-b\right)t+b\right)</code></p>
+            <ul>
+                <li>Replace the two <i>a</i>&#8217;s with the x-value of the starting point.</li>
+                <li>Replace the the two <i>b</i>&#8217;s with the y-value of the starting point.</li>
+                <li>Replace <i>c</i> with the y-value of the starting point.</li>
+                <li>Replace <i>d</i> with the y-value of the starting point.</li>
+            </ul>
+            <h4>Polygons</h4>
+            <p>Polgons are a fast, efficient way to draw shapes that contain no curves. In Desmos, the polygon function takes a list of x-values and a list of y-values for parameters.</p>
+            <p>Copy-paste the following latex into Desmos: <code>\operatorname{polygon}\left(\left[\right],\left[\right]\right)</code></p>
+            <ul>
+                <li>Type the x-values of the points, seperated by commas, in the first set of square brackets.</li>
+                <li>Type the y-values of the points, seperated by commas, in the second set of square brackets.</li>
+            </ul>
+            <p class="note"><span class="note-type">Important:</span> Make sure that the order of the points between the x and y values is the same.
+            </p>
+            <h4>Bezier Curves</h4>
+            <p>Beziers can be used to approximate any curve.</p>
+            <p>Copy-paste the following latex into Desmos: </p>
+            <code>B\left(t,P\right)=\sum_{i=0}^{\operatorname{length}\left(P\right)-1} \operatorname{nCr}\left(\operatorname{length}\left(P\right)-1,i\right)\left(1-t\right)^{\operatorname{length}\left(P\right)-1-i}t^{i}P\left[i+1\right]</code>
+            <p>This statement only needs to appear once on the equation list. The function will allow you to more easily draw Bezier Curves.</p>
+            <p>Copy-paste the following latex into Desmos: <code>\left(B_{ezier}\left(t,\left[\right]\right),B_{ezier}\left(t,\left[\right]\right)\right)</code></p>
+            <ul>
+                <li>Type the x-values of the points, seperated by commas, in the first set of square brackets.</li>
+                <li>Type the y-values of the points, seperated by commas, in the second set of square brackets.</li>
+            </ul>
+            <p class="note"><span class="note-type">Tip:</span> Moving points on a Bezier curve changes the entire curve, adding more points will cause the amount of influence on sections farther away to decrease.</p>
+        </div>
+        <aside class="split-aside"></aside>
+    </div>
+    <p>You can view an example of the equations here:</p>
+    <div id="calculator" style="width: 100%; height: 800px;"></div>
+    <div class="major-step split">
+        <div class="split-main">
+            <h3 id="step-4">4. Outlining Shapes</h3>
+            <ol>
+                <li>If the shape contains only lines, use the polygon function to draw the shape. Otherwise, proceed with the following steps.</li>
+                <li>Designate a starting point on the shape or stroke.</li>
+                <li>If the current shape borders another previously drawn shape, proceed in the opposite direction. (If you drew the previous shape in the clockwise direction, draw the new shape in the counter-clockwise direction and vice versa.)</li>
+                <li>Identify the next point in the sequence.</li>
+                <li>Draw the appropriate line or curve to the next point.</li>
+                <li>If the line or curve already exists, copy and paste the previous equation.</li>
+                <li>Then if the previous line or curve was <strong>not</strong> drawn in the opposite direction, reverse the order of the points in the equation.</li>
+                <li>Repeat steps 4-7 until the entire shape or stroke is drawn.</li>
+            </ol>
+            <p>Repeat sections 2 (Planning a Reference) and 4 (Outlining Shapes) for the remaining shapes and arcs in the reference image.</p>
+        </div>
+        <aside class="split-aside">
+            <div class="note" style="margin: 2em 0 2em 0;"><p><span class="note-type">Note:</span> There may be situations where is is not possible to alternate clockwise, counter-clockwise, in that case, it is fine to choose either direction.</p></div>
+            <div class="note" style="margin: 2em 0 2em 0;"><p><span class="note-type">Important:</span> Be sure to organize and keep track of which equations belong to which shapes and what direction they travel in.</p></div>
+        </aside>
+    </div>
+    <div class="major-step split">
+        <div class="split-main">
+            <h3 id="step-5">5. Filling and Coloring</h3>
+            <p>Desmos supports two main color models: RGB and HSV.</p>
+            <p>See <a href="https://help.desmos.com/hc/en-us/articles/4406795899533-Custom-Colors">Desmos Help</a> for more information on creating colors.</p>
+            <p>To fill in shapes, we need to turn the lines and arcs into piecewise functions.</p>
+            <ol>
+                <li>Designate a shape.</li>
+                <li>Copy-paste the following latex into Desmos: <code>\left(\left\{t<1:\right\},\left\{t<1:\right\}\right)</code></li>
+                <li>Designate a starting line or curve.</li>
+                <li>Copy the x-component of line or curve into the equation from Step 2 after the first colon.</li>
+                <li>Copy the y-component of line or curve into the equation from Step 2 after the second colon.</li>
+                <li>Count the number of lines and curves in the shape.</li>
+            </ol>
+        </div>
+        <aside class="split-aside">
+            <div class="note"><p><span class="note-type">Note:</span> Previously the only way to introduce custom colors was by using JavaScript. This methods is not recommended.</p>
+            </div>
+        </aside>
+    </div>
+    <div class="conclusion">
+        <h3>Afterward</h3>
+        <p>Now you should have the tools to recreate any drawing in Desmos. </p>
+    </div>
+</div>
+<div class="footer">
+    <p>Joseph Edeker 2022</p>
+    <p>ENGL 314</p>
+</div>
+</div>
+<script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+<script>
+    var elt = document.getElementById('calculator');
+    var calculator = Desmos.GraphingCalculator(elt);
+    calculator.setState(JSON.parse('{"version":9,"randomSeed":"8ad63c5db26bbe2ad6dd78b7e4a7fa46","graph":{"viewport":{"xmin":-10,"ymin":-8.211538461538463,"xmax":10,"ymax":8.21153846153846}},"expressions":{"list":[{"type":"folder","id":"2","title":"Points","collapsed":true},{"type":"expression","id":"5","folderId":"2","color":"#2d70b3","latex":"\\\\left(x_{0},y_{0}\\\\right)"},{"type":"expression","id":"6","folderId":"2","color":"#388c46","latex":"x_{0}=-2","hidden":true},{"type":"expression","id":"7","folderId":"2","color":"#6042a6","latex":"y_{0}=4","hidden":true},{"type":"expression","id":"8","folderId":"2","color":"#000000","latex":"\\\\left(x_{1},y_{1}\\\\right)"},{"type":"expression","id":"9","folderId":"2","color":"#c74440","latex":"x_{1}=3","hidden":true},{"type":"expression","id":"10","folderId":"2","color":"#2d70b3","latex":"y_{1}=3","hidden":true},{"type":"expression","id":"11","folderId":"2","color":"#388c46","latex":"\\\\left(x_{2},y_{2}\\\\right)"},{"type":"expression","id":"12","folderId":"2","color":"#6042a6","latex":"x_{2}=4","hidden":true},{"type":"expression","id":"13","folderId":"2","color":"#000000","latex":"y_{2}=0","hidden":true},{"type":"expression","id":"14","folderId":"2","color":"#c74440","latex":"\\\\left(x_{3},y_{3}\\\\right)"},{"type":"expression","id":"15","folderId":"2","color":"#2d70b3","latex":"x_{3}=-1","hidden":true},{"type":"expression","id":"16","folderId":"2","color":"#388c46","latex":"y_{3}=-3","hidden":true},{"type":"expression","id":"17","folderId":"2","color":"#6042a6","latex":"\\\\left(x_{4},y_{4}\\\\right)"},{"type":"expression","id":"18","folderId":"2","color":"#000000","latex":"x_{4}=-3","hidden":true},{"type":"expression","id":"19","folderId":"2","color":"#c74440","latex":"y_{4}=-1","hidden":true},{"type":"folder","id":"4","title":"Line"},{"type":"expression","id":"21","folderId":"4","color":"#388c46","latex":"\\\\left(\\\\left(x_{1}-x_{0}\\\\right)t+x_{0},\\\\left(y_{1}-y_{0}\\\\right)t+y_{0}\\\\right)","hidden":true},{"type":"folder","id":"3","title":"Polygon"},{"type":"expression","id":"22","folderId":"3","color":"#6042a6","latex":"\\\\operatorname{polygon}\\\\left(\\\\left[x_{0},x_{1},x_{2},x_{3},x_{4}\\\\right],\\\\left[y_{0},y_{1},y_{2},y_{3},y_{4}\\\\right]\\\\right)","hidden":true},{"type":"folder","id":"24","title":"Bezier Curve"},{"type":"expression","id":"25","folderId":"24","color":"#c74440","latex":"B\\\\left(t,P\\\\right)=\\\\sum_{i=0}^{\\\\operatorname{length}\\\\left(P\\\\right)-1}\\\\operatorname{nCr}\\\\left(\\\\operatorname{length}\\\\left(P\\\\right)-1,i\\\\right)\\\\left(1-t\\\\right)^{\\\\operatorname{length}\\\\left(P\\\\right)-1-i}t^{i}P\\\\left[i+1\\\\right]"},{"type":"expression","id":"31","folderId":"24","color":"#2d70b3","latex":"\\\\left(B\\\\left(t,\\\\left[x_{0},x_{1},x_{2},x_{3}\\\\right]\\\\right),B\\\\left(t,\\\\left[y_{0},y_{1},y_{2},y_{3}\\\\right]\\\\right)\\\\right)","hidden":true}]}}'));
+  </script>
+<script type="text/javascript" src="src/scripts/main.js"></script>
 </body>
-</html>

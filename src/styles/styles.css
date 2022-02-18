@@ -1,0 +1,136 @@
+h1 {
+    margin: 0;
+    color: white;
+    font-family: fira-sans, sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+    margin: 0;
+    color: #EEEEEE;
+    font-family: fira-sans, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+h3 {
+    margin: 0;
+    color: #304D6D;
+    font-family: fira-sans, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+h4 {
+    margin: 1.5em 0 0 0;
+    color: #545E75;
+    font-family: fira-sans, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+p, caption {
+    font-family: yrsa, serif;
+    font-size: 18px;
+}
+
+.caption {
+    margin-top: 0em;
+    max-width: 400px;
+}
+
+code {
+    display: inline-block;
+    margin: 0.1em;
+    padding: 0.2em;
+    border: 1px solid #222222;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+
+    font-family: fira-mono, monospace;
+    font-size: 14px;
+}
+
+ol, ul {
+    font-family: yrsa, serif;
+    font-size: 18px;
+}
+
+ol li, ul li {
+    margin: 0.5em;
+}
+
+ol a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.tooltip {
+    position: relative;
+
+    font-weight: bold;
+}
+
+.tooltip > .content {
+    position: absolute;
+    left: 0em;
+    bottom: 2em;
+    padding: 0.5em;
+    border-radius: 5px;
+
+    min-width: 400px;
+
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: normal;
+
+    display: none;
+}
+
+.tooltip > .content > p {
+    margin: 0;
+}
+
+.tooltip > .content::before {
+    content: "";
+    position: absolute;
+    bottom: -0.5em;
+    left: 1em;
+    width: 1em;
+    height: 1em;
+
+    transform: rotate(45deg);
+    
+    background-color: #000000;
+}
+
+.tooltip > .content > img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.tooltip:hover > .content {
+    display: block;
+}
+
+.note-type {
+    font-weight: bold;
+    color: #63ADF2;
+}
+
+
+.figure {
+    width: 400px;
+}
+
+.gallary {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.gallary-item {
+    flex: 1 1 auto;
+}
+
+/* https://coolors.co/545e75-63adf2-a7cced-304d6d-82a0bc */
