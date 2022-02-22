@@ -15,7 +15,7 @@ h2 {
 
 h3 {
     margin: 0;
-    color: #304D6D;
+    color: #236C99;
     font-family: fira-sans, sans-serif;
     font-weight: 400;
     font-size: 32px;
@@ -23,7 +23,7 @@ h3 {
 
 h4 {
     margin: 1.5em 0 0 0;
-    color: #545E75;
+    color: #4CAAE6;
     font-family: fira-sans, sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -115,7 +115,7 @@ ol a {
 
 .note-type {
     font-weight: bold;
-    color: #63ADF2;
+    color: #EBAC54;
 }
 
 
