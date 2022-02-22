@@ -84,9 +84,9 @@
             <p>Add a point along the path each time one of the following situations occur:</p>
             <ol>
                 <li>Start or end of stroke</li>
-                <li>A <span class="tooltip">corner<span class="content"><p>A point at which the path is not smooth (the derivative is not continuous).</p></span></span></li>
-                <li>A change in <span class="tooltip">characteristic<span class="content"><p>Example: A line transitioning into an arc.</p></span></span></li>
-                <li>An intersection of three or more shapes</li>
+                <li>A <span class="tooltip">corner<span class="content"><p>A point at which the path is not smooth (the derivative is not continuous).</p></span></span> (see figure 3a)</li>
+                <li>A change in <span class="tooltip">characteristic<span class="content"><p>Example: A line transitioning into an arc.</p></span></span> (see figure 3b)</li>
+                <li>An intersection of three or more shapes (see figure 3c)</li>
             </ol>
             <p>Use subscripts to name points; typing <code>_</code> (underscore) allows you to enter subscript.</p>
             <p>A sample point is provided.</p>
@@ -109,6 +109,20 @@
                 </ul>
             </p></div>
         </aside>
+    </div>
+    <div class="gallary">
+        <div class="gallary-item">
+            <img class="figure" src="res/corner.jpg"/>
+            <p class="caption">Figure 3a: Corners marked by red dots.</p>
+        </div>
+        <div class="gallary-item">
+            <img class="figure" src="res/char.jpg"/><br>
+            <p class="caption">Figure 3b: Changes in characteristics marked by red dots.</p>
+        </div>
+        <div class="gallary-item">
+            <img class="figure" src="res/ball.jpg"/><br>
+            <p class="caption">Figure 3c: Three color interesctions marked by red dots.</p>
+        </div>
     </div>
     <div class="major-step split">
         <div class="split-main">
@@ -158,7 +172,7 @@
             <ol>
                 <li>If the shape contains only lines, use the polygon function to draw the shape. Otherwise, proceed with the following steps.</li>
                 <li>Designate a starting point on the shape or stroke.</li>
-                <li>If the current shape borders another previously drawn shape, proceed in the opposite direction. (If you drew the previous shape in the clockwise direction, draw the new shape in the counter-clockwise direction and vice versa.)</li>
+                <li>If the current shape borders another previously drawn shape, proceed in the opposite direction. (If you drew the previous shape in the clockwise direction, draw the new shape in the counter-clockwise direction and vice versa, see figure 4.)</li>
                 <li>Identify the next point in the sequence.</li>
                 <li>Draw the appropriate line or curve to the next point.</li>
                 <li>If the line or curve already exists, copy and paste the previous equation.</li>
@@ -175,8 +189,10 @@
             <p>Repeat sections 2 (Planning a Reference) and 4 (Outlining Shapes) for the remaining shapes and arcs in the reference image.</p>
         </div>
         <aside class="split-aside">
-            <div class="note" style="margin: 2em 0 2em 0;"><p><span class="note-type">Note:</span> There may be situations where is is not possible to alternate clockwise, counter-clockwise, in that case, it is fine to choose either direction.</p></div>
             <div class="note" style="margin: 2em 0 2em 0;"><p><span class="note-type">Important:</span> Be sure to organize and keep track of which equations belong to which shapes and what direction they travel in.</p></div>
+            <img class="figure" src="res/puzzel.jpg"/>
+            <p class="caption">Figure 4: Clockwise counter-clockwise flow pattern marked by red arrows.</p>
+            <div class="note" style="margin: 2em 0 2em 0;"><p><span class="note-type">Note:</span> There may be situations where is is not possible to alternate clockwise, counter-clockwise, in that case, it is fine to choose either direction.</p></div>
         </aside>
     </div>
     <div class="major-step split">
@@ -211,8 +227,6 @@
             <p>Repeat the above process for each shape.</p>
         </div>
         <aside class="split-aside">
-            <div class="note"><p><span class="note-type">Note:</span> Previously the only way to introduce custom colors was by using JavaScript. This methods is not recommended.</p>
-            </div>
         </aside>
     </div>
     <p>You can view a completed piecewise function here:</p>
@@ -223,7 +237,7 @@
             <p>Now you should have the tools to recreate any drawing in Desmos. There are many other
                 techniques to creating art in Desmos, consider checking out some of the graphs
                 featured on the Desmos <a target="_blank" href="https://www.desmos.com/art">art page</a>.</p>
-            <p>For another way of creating art with math, check out this <a target="_blank" href="https://blog.wolfram.com/2013/05/17/making-formulas-for-everything-from-pi-to-the-pink-panther-to-sir-isaac-newton/">blog post</a></p>
+            <p>For another way of creating art with math, check out this <a target="_blank" href="https://blog.wolfram.com/2013/05/17/making-formulas-for-everything-from-pi-to-the-pink-panther-to-sir-isaac-newton/">blog post</a>.</p>
         </div>
         <aside class="split-aside">
         </aside>
