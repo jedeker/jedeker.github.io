@@ -23,17 +23,21 @@
     <div class="introduction split">
         <div class="split-main">
             <h3>Introduction</h3>
-            <p>The Desmos graphing calculator is often used to draw art (figure 1), in addition to visualizing
-                equations and data. Official contests have been held, with art featured on the
-                website. The following instructions describe one process of creating such art.
-            </p>
-            <p>The basic understanding of Desmos is required and a strong understanding of high school level math is recommended (Algebra II or above).
+            <p>The Desmos graphing calculator is often used to create art, in addition to graphing
+                and visualizing numerical data. Desmos art is displayed on the website and official
+                contests have been held. The following instructions describe one process of creating
+                art in Desmos.</p>
+            <p>Knowledge of the basic functionality of Desmos is inferred and a strong understanding
+                of math (up to Algebra II) is recommended. The time requirement varies with each
+                piece (see figures 2a, 2b, and 2c), although expect about 1 hour to learn and
+                complete this process.
             </p>
             <p class="note"><span class="note-type">Hint:</span> Bolded keywords reveal additional information when moused over.</p>
         </div>
         <aside class="split-aside">
             <img class="figure" src="res/no-title.png"/><br>
-            <caption>Figure 1: Desmos adapation of「No Title-」album cover art.</caption>
+            <caption>Figure 1: Desmos adapation of「No Title-」album cover art.<br>
+                Desmos graph <a target="_blank" href="https://www.desmos.com/calculator/yjmxatfsnd">link</a>.</caption>
         </aside>
     </div>
     <div class="contents">
@@ -61,15 +65,15 @@
     </div>
     <div class="gallary">
         <div class="gallary-item">
-            <img class="figure" src="res/placeholder.png"/>
-            <p class="caption">Figure 2a: A simple image containing a few large shapes and strokes which add detail to the image. Estimated time of completion 1 hour.</p>
+            <img class="figure" src="res/beagle.png"/>
+            <p class="caption">Figure 2a: A simple image consisting of generally large shapes and no fine detail. Estimated time of completion 2+ hours.</p>
         </div>
         <div class="gallary-item">
-            <img class="figure" src="res/placeholder.png"/><br>
-            <p class="caption">Figure 2b: A character drawing which contains many shapes and details. Estimated time of completion 5+ hours.</p>
+            <img class="figure" src="res/untitled.png"/><br>
+            <p class="caption">Figure 2b: A character drawing which contains many shapes and details. Estimated time of completion 10+ hours.</p>
         </div>
         <div class="gallary-item">
-            <img class="figure" src="res/placeholder.png"/><br>
+            <img class="figure" src="res/hall.jpg"/><br>
             <p class="caption">Figure 2c: A real-life photo which contains high amounts of fine detail. Not recommended.</p>
         </div>
     </div>
@@ -84,8 +88,12 @@
                 <li>A change in <span class="tooltip">characteristic<span class="content"><p>Example: A line transitioning into an arc.</p></span></span></li>
                 <li>An intersection of three or more shapes</li>
             </ol>
-            <p>To add a point, type <code>(x_</code> ? <code>→</code><code>,y_</code> ? <code>)</code> where ? is the current number of points already in the graph and → is the right arrow key.</p>
-            <p>Click the blue <span class="tooltip">all<span class="content"><img src="res/slider-all.png"/></span></span> button which appears.</p>
+            <p>Use subscripts to name points; typing <code>_</code> (underscore) allows you to enter subscript.</p>
+            <p>A sample point is provided.</p>
+            <ol>
+                <li>Copy-paste the following equation into Desmos: <code>\left(x_{0},y_{0}\right)</code>.</li>
+                <li>Click the blue <span class="tooltip">all<span class="content"><img src="res/slider-all.png"/></span></span> button which appears.</li>
+            </ol>
             <p class="note"><span class="note-type">Tip:</span> Add all points to a folder to keep your graph organized.</p>
         </div>
         <aside class="split-aside">
@@ -107,7 +115,9 @@
             <h3 id="step-3">3. Building Equations</h3>
             <p>All paths can be approximated by lines and Bezier curves. Other equations may be used, but each require additional adaptation which is outside the scope of this guide.
                 Polynomials, Splines, and Fourier Series are among the most powerful techniques to name a few.</p>
-            <p>Experiment with the following equations to see how they work. Add any new points as needed so the points added in Step 2 may remain stationary.</p>
+            <p>Experiment with the following equations to see how each work. Add any new points as
+                needed so the points added in Step 2 may remain stationary. At the bottom of
+                Step 3, an example graph is included to see the outcome of each equation.</p>
             <h4>Lines</h4>
             <p>The parametric equation which connects two points is as follows:</p><img height="32px" src="res/point-equation.PNG"/>
             <p>Copy-paste the following latex into Desmos: <code>\left(\left(c-a\right)t+a,\left(d-b\right)t+b\right)</code></p>
@@ -152,8 +162,15 @@
                 <li>Identify the next point in the sequence.</li>
                 <li>Draw the appropriate line or curve to the next point.</li>
                 <li>If the line or curve already exists, copy and paste the previous equation.</li>
-                <li>Then if the previous line or curve was <strong>not</strong> drawn in the opposite direction, reverse the order of the points in the equation.</li>
+                <li>Then if the previous line or curve was <i>not</i> drawn in the opposite direction, reverse the order of the points in the equation.</li>
                 <li>Repeat steps 4-7 until the entire shape or stroke is drawn.</li>
+            </ol>
+            <p>For each point, if all the shapes which use that point have been drawn, lock the value in place.</p>
+            <ol>
+                <li>Copy the x-value of the point.</li>
+                <li>Paste the value wherever the x-variable appears (i.e. x₀ becomes 3.5).</li>
+                <li>Copy the y-value of the point.</li>
+                <li>Paste the value wherever the y-variable appears (i.e. y₀ becomes -2.8).</li>
             </ol>
             <p>Repeat sections 2 (Planning a Reference) and 4 (Outlining Shapes) for the remaining shapes and arcs in the reference image.</p>
         </div>
@@ -189,7 +206,9 @@
                     <li>Increment the 2 in Steps 8 and 12 by one each time.</li>
                     <li>Increment the 1 in Steps 11 and 15 by one each time.</li>
                 </ol>
+                <li>Enable <span class="tooltip">fill<span class="content"><img src="res/fill.png"/></span></span> for the shape.</li>
             </ol>
+            <p>Repeat the above process for each shape.</p>
         </div>
         <aside class="split-aside">
             <div class="note"><p><span class="note-type">Note:</span> Previously the only way to introduce custom colors was by using JavaScript. This methods is not recommended.</p>
@@ -198,9 +217,14 @@
     </div>
     <p>You can view a completed piecewise function here:</p>
     <div id="piecewise-calculator" style="width: 100%; height: 800px;"></div>
-    <div class="conclusion">
-        <h3>Afterward</h3>
-        <p>Now you should have the tools to recreate any drawing in Desmos. There are many other techniques to creating art in Desmos, consider checking out some of the graphs featured on the Desmos homepage.</p>
+    <div class="conclusion split">
+        <div class="split-main">
+            <h3>Afterward</h3>
+            <p>Now you should have the tools to recreate any drawing in Desmos. There are many other techniques to creating art in Desmos, consider checking out some of the graphs featured on the Desmos homepage.</p>
+    
+        </div>
+        <aside class="split-aside">
+        </aside>
     </div>
 </div>
 <div class="footer">
